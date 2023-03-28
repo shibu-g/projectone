@@ -1,0 +1,30 @@
+body{
+    background-color: aliceblue;
+}
+.main{
+    margin: 0vw 10vw;
+    height:900px;
+    width: 80%;
+    background-image: url("pxfuel.jpg");
+    background-repeat: no-repeat;
+}
+.options{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+.options div{
+    height:10vh;
+    width:auto;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 6vh;
+    padding-top: 1vh;
+    cursor: pointer;
+    
+}
+.options div:hover{
+    color: blue;
+}
