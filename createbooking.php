@@ -1,3 +1,5 @@
+
+<?php session_start(); ?>
 <?php
 # server name
 $sName = "localhost:3307";
@@ -17,7 +19,8 @@ if ( isset ($_POST['submit'])){
     $contact=$_POST['contact'];
     $mobile=$_POST['mobile'];
     $location=$_POST['location'];
-   $query="INSERT INTO bookings values('$type','$name',' $contact','$mobile','$location','1200','hi','')";
+
+   $query="INSERT INTO bookings values('$type','$name',' $contact','$mobile','$location','hi','hi',' ')";
    mysqli_query($conn,$query); 
 }
 ?>

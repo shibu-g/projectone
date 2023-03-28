@@ -27,8 +27,8 @@ if (isset($_POST['submit'])){
    $flag=true;
    while($row = mysqli_fetch_assoc($result)){ 
     $flag=false;
-    $username=$row['username'];
-    echo "<script>alert('Welcome','$user');</script>";
+    $loginusername=$row['username'];
+    echo "<script>alert('Welcome'+$user);</script>";
     header('location:home.php');
     exit;
    }

@@ -1,7 +1,8 @@
 let item1=document.querySelector('.item1');
 let item2=document.querySelector('.item2');
 let item3=document.querySelector('.item3');
-let item4=document.getElementsByClassName('logout');
+let item4=document.querySelector('.logout');
+
 function newbooking(){
   
     window.location.href="createbooking.php";
@@ -15,7 +16,7 @@ function locations(){
    
     window.location.href="#";
 }
-function hi(){
+function logout(){
    
     window.location.href="login.php";
 }
@@ -23,5 +24,5 @@ function hi(){
 item1.addEventListener('click',newbooking);
 item2.addEventListener('click',history);
 item3.addEventListener('click',locations);
-item4.addEventListener('click',hi);
+item4.addEventListener('click',logout);
 
